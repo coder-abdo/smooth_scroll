@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:400,700');
+:root {
+    /* colors */
+    --blue: #00C2FF;
+    --white: #fff;
+    --yellow: #FFCF00;
+    --green: #00DE76;
+    --pink: #DB2751;
+    /* font */
+    --ff: 'Mukta', sans-serif;
+
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+.header {
+    width: 100%;
+    height: 10rem;
+    background-color:#333;
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+ .header .nav-bar__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.header .nav-bar__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav-bar__list-link {
+    text-decoration: none;
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: currentColor;
+    transition:  .3s;
+}
+.header .nav-bar__list-link:hover{
+    color: var(--yellow);
+}
+.nav-bar__list-item:nth-child(1) a.active{
+    color: var(--yellow);
+}
+.nav-bar__list-item:nth-child(2) a.active{
+    color: var(--blue);
+}
+.nav-bar__list-item:nth-child(3) a.active{
+    color: var(--green);
+}
+.nav-bar__list-item:nth-child(4) a.active{
+    color: var(--pink);
+}
+section {
+    width: 100%;
+    min-height: 90rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+#home {
+    background-color: var(--yellow);
+    margin-top: 10rem;
+}
+#section-1 {
+    background-color: var(--blue);
+}
+#section-2 {
+    background-color: var(--green);
+}
+#section-3 {
+    background-color: var(--pink);
+}
