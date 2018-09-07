@@ -5,9 +5,9 @@
    .not('[href="#0"]')
    .on('click', function (e) {
     if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+        location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') 
         && 
-        location.hostname == this.hostname
+        location.hostname === this.hostname
       ){
         var _target = $(this.hash);
         _target = _target.length ? _target : $('[name=' + this.hash.slice(1) + ']');
